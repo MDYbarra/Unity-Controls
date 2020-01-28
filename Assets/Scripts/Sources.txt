@@ -1,27 +1,28 @@
 
+Sources for the Game objects
 
 
-
-2D 
+** 2D Textures:
 
 Grass
 @freetousesoundscom
 https://unsplash.com/photos/Qgq7j_QCYtw
 
+Plane
+Scott Web
+https://unsplash.com/photos/3LsocYqXWpM
+
+Plane Tree
+@jeffkingla
+https://unsplash.com/photos/bJHWJeiHfHc
+
+House
+Lukas Martynas Janosek
+https://unsplash.com/photos/Sbw9i3K2-pI
 
 
 
-
-
-
-
-
-
-
-
-
-
-3D Models 
+*** 3D Models:
 
 Wooden Fence
 DmitriyGDS
@@ -42,6 +43,13 @@ Blender
 Apple
 Michael Ybarra
 Blender
+
+Dog
+luna the lowpoly dog
+blujay
+https://sketchfab.com/3d-models/luna-the-lowpoly-dog-61abe4aabd9d4cb5bfdd817b98e8ef06
+
+
 
 
 
