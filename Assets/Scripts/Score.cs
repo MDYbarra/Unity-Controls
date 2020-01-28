@@ -23,7 +23,9 @@ public class Score : MonoBehaviour
 
         if (score != maxScore)
             scoreText.text = "Score: " + score;
-        else
+        else{
             scoreText.text = "You won!";
+            Application.Quit();
+        }
     }
 }

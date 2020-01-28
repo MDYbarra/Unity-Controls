@@ -33,20 +33,24 @@ public class CharacterController : MonoBehaviour
         else if (Input.GetKey(KeyCode.A))
             t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
         
-        if (Input.GetKeyDown(KeyCode.Space))
-            rb.AddForce(t.up * force);
+        if (Input.GetKeyDown(KeyCode.O))
+            rb.AddForce(t.up * force /2);
 
-	     // if (Input.GetKeyDown(KeyCode.L)){
-	     //        GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
-	     //        newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 10;
-	     //        newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
-	     //    }       
+	   if (Input.GetKeyDown(KeyCode.K)){
+	            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
+	            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
+	            newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+	   }       
 
-
-        if (Input.GetButton("Fire1")){
-            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
-            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 10;
-            newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+        if (Input.GetKey(KeyCode.Y)){
+            Application.Quit();
         }
+
+
+        // if (Input.GetButton("Fire1")){
+        //     GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
+        //     newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 10;
+        //     newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+        // }
     }
 }
