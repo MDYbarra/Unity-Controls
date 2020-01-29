@@ -1,13 +1,14 @@
 /target:library
 /nowarn:0169
-/out:"Temp/Unity.CollabProxy.Editor.dll"
+/out:"Temp/Unity.TextMeshPro.Editor.dll"
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
 /reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
 /reference:"Library/ScriptAssemblies/UnityEditor.TestRunner.dll"
 /reference:"Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
@@ -251,10 +252,11 @@
 /define:PLATFORM_SUPPORTS_MONO
 /define:RENDER_SOFTWARE_CURSOR
 /define:ENABLE_VIDEO
-/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_STANDALONE_OSX
 /define:PLATFORM_STANDALONE
-/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE_OSX
 /define:UNITY_STANDALONE
+/define:ENABLE_GAMECENTER
 /define:ENABLE_RUNTIME_GI
 /define:ENABLE_MOVIES
 /define:ENABLE_NETWORK
@@ -264,12 +266,12 @@
 /define:ENABLE_CLOUD_SERVICES_ANALYTICS
 /define:ENABLE_CLOUD_SERVICES_PURCHASING
 /define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
-/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
-/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
 /define:ENABLE_CLUSTER_SYNC
 /define:ENABLE_CLUSTERINPUT
 /define:ENABLE_VR
 /define:ENABLE_AR
+/define:ENABLE_SPATIALTRACKING
 /define:ENABLE_WEBSOCKET_HOST
 /define:ENABLE_MONO
 /define:NET_4_6
@@ -293,20 +295,50 @@
 /define:ENABLE_TIMELINE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/AssemblyInfo.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Bootstrap.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabAnalytics.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabHistoryWindow.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabToolbarButton.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabToolbarWindow.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Presenters/CollabHistoryPresenter.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/BuildStatusButton.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryDropDown.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryDropDownItem.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryItem.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryItemFactory.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryRevisionLine.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/HistoryProgressSpinner.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/ICollabHistoryItemFactory.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/PagedListView.cs"
-"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/StatusView.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/DropdownOptionListDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/GlyphInfoDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/GlyphMetricsPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/GlyphRectPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_BaseEditorPanel.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_BaseShaderGUI.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_BitmapShaderGUI.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_CharacterPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_ColorGradientAssetMenu.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_ColorGradientEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_DropdownEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_EditorCoroutine.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_EditorPanel.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_EditorUtility.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_FontAsset_CreationMenu.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_FontAssetEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_GlyphPairAdjustmentRecordPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_GlyphPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_InputFieldEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_MeshRendererEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PackageUtilities.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PostBuildProcessHandler.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_ProjectTextSettings.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_ResourcesLoader.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SDFShaderGUI.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SerializedPropertyHolder.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SettingsEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SpriteAssetEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SpriteAssetImporter.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SpriteAssetMenu.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SpriteCharacterPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SpriteGlyphPropertyDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_StyleAssetMenu.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_StyleSheetEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SubMesh_Editor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_SubMeshUI_Editor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_TextAlignmentDrawer.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_UiEditorPanel.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_UIStyleManager.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_ContextMenus.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_CreateObjectMenu.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_EditorShaderUtilities.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_FontPlugin.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_SortingLayerHelper.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_TextContainerEditor.cs"
+"/Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMPro_TexturePostProcessor.cs"

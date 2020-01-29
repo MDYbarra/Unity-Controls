@@ -527,4 +527,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/michaelybarra/Desktop/test1.app
+  playerPath: /Users/michaelybarra/Desktop/Game_1.app

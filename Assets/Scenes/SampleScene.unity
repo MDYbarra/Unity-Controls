@@ -4324,9 +4324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c14982798297436ca9e62ac590714ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 20
   rotationSpeed: 90
-  force: 700
+  force: 1500
   cannon: {fileID: 1485686311}
   bullet: {fileID: 1325755909}
   audioSource: {fileID: 469875484}
