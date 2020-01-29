@@ -527,4 +527,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Win_cs426_Ybarra_Michael_Asgn1/cs426_Ybarra_Michael_Asgn1.exe
+  playerPath: /Users/michaelybarra/Desktop/CS 426/cs426_Ybarra_Michael_Asgn1/Win_Ver/cs426_Ybarra_Michael_Asgn1.exe
