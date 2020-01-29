@@ -47,6 +47,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -300,7 +304,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 9d8f7906e4a9f3a678ebfcbe42f350fd
+      Hash: d0fbdf240597d111aeea4a2eb6692b07
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterController

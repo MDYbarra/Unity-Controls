@@ -9,6 +9,7 @@ public class CharacterController : MonoBehaviour
     public float force = 700f;
     public GameObject cannon;
     public GameObject bullet;
+    public AudioSource audioSource;
 
     Rigidbody rb;
     Transform t;
@@ -23,6 +24,8 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKey(KeyCode.W))
             rb.velocity += this.transform.forward * speed * Time.deltaTime;
         else if (Input.GetKey(KeyCode.S))
@@ -40,11 +43,14 @@ public class CharacterController : MonoBehaviour
 	            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
 	            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
 	            newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+                audioSource.Play();
 	   }       
 
         if (Input.GetKey(KeyCode.Y)){
             Application.Quit();
         }
+        
+
 
 
         // if (Input.GetButton("Fire1")){
